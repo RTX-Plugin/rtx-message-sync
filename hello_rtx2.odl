@@ -1,0 +1,21 @@
+// hello_rtx2.odl : type library source for hello_rtx2.dll
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (hello_rtx2.tlb).
+
+[ uuid(73683124-4134-4311-AEC7-406746423393), version(1.0) ]
+library hello_rtx2
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+	importlib("..\..\..\tlb\RTXCModuleInterface.tlb");
+
+	[ uuid(9B1FF970-CC47-4434-B641-86049AABD776) ]
+	coclass hello_rtx2Module
+	{
+		[default] interface IRTXCModule;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

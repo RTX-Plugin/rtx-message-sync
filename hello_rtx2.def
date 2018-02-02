@@ -1,0 +1,10 @@
+; hello_rtx2.def : Declares the module parameters for the DLL.
+
+LIBRARY      "hello_rtx2"
+DESCRIPTION  'hello_rtx2 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	DllCanUnloadNow PRIVATE
+	DllGetClassObject PRIVATE
+	DllRegisterServer PRIVATE
